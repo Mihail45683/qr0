@@ -83,7 +83,9 @@
   transition: all 0.25s ease;
   
   /* Фирменный киберпанк-срез (только нижний правый угол) */
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+  mask: linear-gradient(-135deg, transparent 10px, #000 0);
+  -webkit-mask: linear-gradient(-135deg, transparent 10px, #000 0);
+}
   
   /* Едва заметное, мягкое свечение по умолчанию */
   text-shadow: 0 0 4px var(--orange-glow);
