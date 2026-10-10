@@ -43,37 +43,53 @@
 	}*/
 
 
-button {
+
+  
+
+
+ button {
+  /* Спокойный оранжевый цвет */
+  --orange-accent: #e65c00; 
+  --orange-glow: rgba(230, 92, 0, 0.4);
+
   background: transparent;
-  color: #00f0ff; /* Неоновый голубой */
+  color: var(--orange-accent);
   font-family: 'Courier New', Courier, monospace;
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 3px;
-  padding: 15px 30px;
-  border: 2px solid #00f0ff;
-  border-radius: 4px;
+  padding: 14px 32px;
+  
+  /* Тонкая рамка вместо толстой */
+  border: 1px solid var(--orange-accent);
   cursor: pointer;
   outline: none;
   position: relative;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
   
-  /* Эффект легкого свечения текста и рамки по умолчанию */
-  text-shadow: 0 0 8px rgba(0, 240, 255, 0.6);
-  box-shadow: 0 0 10px rgba(0, 240, 255, 0.3), inset 0 0 10px rgba(0, 240, 255, 0.2);
+  /* Фирменный киберпанк-срез (только нижний правый угол) */
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+  
+  /* Едва заметное, мягкое свечение по умолчанию */
+  text-shadow: 0 0 4px var(--orange-glow);
+  box-shadow: inset 0 0 8px rgba(230, 92, 0, 0.1);
 }
 
-/* Эффект при наведении */
+/* Эффект при наведении — мягкое наполнение цветом */
 button:hover {
-  color: #fff;
-  background: #00f0ff;
-  /* Мощный взрыв неонового света вокруг кнопки */
-  box-shadow: 0 0 20px #00f0ff, 
-              0 0 40px #00f0ff, 
-              0 0 60px #00f0ff;
+  color: #111111; /* Текст становится темным на оранжевом фоне */
+  background-color: var(--orange-accent);
+  
+  /* Свечение при наведении аккуратное, не слепит глаза */
+  box-shadow: 0 0 15px var(--orange-glow);
   text-shadow: none;
 }
- 
+
+/* Эффект при нажатии (клик) */
+.cyber-orange-btn:active {
+  transform: scale(0.98);
+  filter: brightness(0.8);
+}
 
 
 
