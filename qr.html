@@ -27,7 +27,7 @@
             color: red;
             cursor: pointer;
         }
-	button {
+	/*button {
 		background-color: #008CBA;
 		color: white;
 		font-size: 16px;
@@ -40,7 +40,45 @@
 		text-align:center;
 		border: none;
 		border-radius: 10px;
-	}
+	}*/
+
+
+.button {
+  background: transparent;
+  color: #00f0ff; /* Неоновый голубой */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding: 15px 30px;
+  border: 2px solid #00f0ff;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  transition: all 0.3s ease;
+  
+  /* Эффект легкого свечения текста и рамки по умолчанию */
+  text-shadow: 0 0 8px rgba(0, 240, 255, 0.6);
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.3), inset 0 0 10px rgba(0, 240, 255, 0.2);
+}
+
+/* Эффект при наведении */
+button:hover {
+  color: #fff;
+  background: #00f0ff;
+  /* Мощный взрыв неонового света вокруг кнопки */
+  box-shadow: 0 0 20px #00f0ff, 
+              0 0 40px #00f0ff, 
+              0 0 60px #00f0ff;
+  text-shadow: none;
+}
+ 
+
+
+
+
+
 	textarea {
 		background-color:#E9EFF6;
 		border-radius: 10px;
