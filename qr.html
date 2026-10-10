@@ -79,7 +79,8 @@
       const defaultTexts = [
         {name: 'Сортировка', text: '46818'},
         {name: 'Подготовка к отгрузке', text: '46800'},
-        {name: 'Курьеры', text: '46803'}
+        {name: 'Курьеры', text: '46803'}, 
+									{name: 'Приемка лотов/Отгрузка', text: '46799'}
       ];
 
       defaultTexts.forEach(function (qr) {
@@ -92,8 +93,7 @@
         });
 
         item.append(
-      $('<p class="qr-name"></p>').text(qr.name),
-      $('<p class="qr-text"></p>').text(qr.text)
+      $('<p class="qr-name"></p>').text(qr.name)
     );
 
 
@@ -116,9 +116,9 @@
     // Создать QR-коды только при первом нажатии
     if (!list.data('created')) {
       const defaultTexts = [
-        {name: 'hranenie 1', text: 'Первый текст'},
-        {name: 'hranenie 2', text: 'Второй текст'},
-        {name: 'SORT 1', text: 'https://example.com'}
+        {name: 'hranenie 1', text: '8110933'},
+        {name: 'hranenie 2', text: '8111046'},
+        {name: 'SORT 3', text: '37687507'}
       ];
 
       defaultTexts.forEach(function (qr) {
