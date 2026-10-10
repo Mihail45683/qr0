@@ -96,12 +96,13 @@ button:hover {
   background-color: var(--orange-accent);
   
   /* Свечение при наведении аккуратное, не слепит глаза */
+			border-radius: 10px;
   box-shadow: 0 0 15px var(--orange-glow);
   text-shadow: none;
 }
 
 /* Эффект при нажатии (клик) */
-.cyber-orange-btn:active {
+button:active {
   transform: scale(0.98);
   filter: brightness(0.8);
 }
