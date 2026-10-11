@@ -31,3 +31,111 @@
   /* Усиление свечения при наведении */
   box-shadow: 0 0 25px rgba(255, 107, 107, 0.9); 
 }
+
+
+/* Общие настройки фона страницы */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d0e12; /* Глубокий темный фон */
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+/* 1. Цветные размытые сферы на заднем плане (создают магию стекла) */
+.bg-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: 1;
+  opacity: 0.6;
+}
+.blob-1 {
+  width: 250px;
+  height: 250px;
+  background: #ff5e62; /* Коралловое свечение */
+  top: -40px;
+  left: -40px;
+}
+.blob-2 {
+  width: 200px;
+  height: 200px;
+  background: #ff9966; /* Оранжевое свечение */
+  bottom: -20px;
+  right: -20px;
+}
+
+/* 2. Основная стеклянная панель (Glassmorphic Card) */
+.glass-card {
+  position: relative;
+  z-index: 2; /* Поверх светящихся сфер */
+  background: rgba(23, 24, 28, 0.4); /* Темный цвет с прозрачностью 40% */
+  
+  /* Главный эффект размытия заднего плана */
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px); /* Корректное отображение в Safari */
+  
+  /* Закругление и ультра-тонкая полупрозрачная рамка */
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  
+  padding: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+}
+
+/* Стилизация текста для максимальной читаемости */
+.card-title {
+  margin: 0 0 8px 0;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+.card-subtitle {
+  margin: 0 0 24px 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6); /* Приглушенный белый для контраста */
+}
+
+/* 3. Неоновая кнопка с эффектом внутреннего объема (Neumorphism + Glow) */
+.control-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.label {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.neon-button {
+  background: #ff5e62;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  
+  /* Внешнее неоновое свечение кнопки */
+  box-shadow: 0 0 15px rgba(255, 94, 98, 0.5), 
+              inset 0 1px 1px rgba(255, 255, 255, 0.3); /* Внутренний блик сверху */
+              
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.neon-button:hover {
+  transform: translateY(-1px);
+  /* Усиливаем свечение при наведении */
+  box-shadow: 0 0 25px rgba(255, 94, 98, 0.8), 
+              inset 0 1px 1px rgba(255, 255, 255, 0.4);
+}
