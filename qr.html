@@ -10,12 +10,19 @@
     <style>
 * {
   -webkit-tap-highlight-color: transparent;
-		background: #000000;
-		color: #F5F5F7 ;
- 
-}
+	}
+
+:root {
+  --bg-main: #000000;
+  --bg-card: #0b0b0c;
+  --text-primary: #f5f5f7;
+  --text-secondary: #86868b;
+  --accent: #0071e3; /* измените на свой фирменный цвет */
+} 
 
         body {
+		background-color: var(--bg-main);
+  color: var(--text-primary); 
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 50px;
