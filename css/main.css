@@ -152,4 +152,7 @@ button {
 
 .qrcode-item {
 	background: rgba(255, 255, 255, 0.6);
+	justify-content:center;
+	aligen-items:center ;
+	color: #0000
 } 
