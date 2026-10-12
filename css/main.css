@@ -46,6 +46,10 @@ body {
   overflow: hidden;
 }
 
+button {
+	margin: 10px;
+} 
+
 .A1 {
 		display: flex;
 		flex-wrap: wrap;
