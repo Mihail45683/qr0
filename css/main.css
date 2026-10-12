@@ -42,7 +42,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  
   overflow-x: hidden;
 		overflow-y: auto;
 }
@@ -52,7 +52,7 @@ button {
 } 
 
 .A1 {
-	max-width: 80%;
+	max-width: 90%;
 		
 } 
 
@@ -152,7 +152,5 @@ button {
 
 .qrcode-item {
 	background: rgba(255, 255, 255, 0.6);
-	justify-content:center;
-	aligen-items:center ;
-	color: #0000
+	color: #0000;
 } 
