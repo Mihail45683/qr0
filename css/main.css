@@ -46,6 +46,12 @@ body {
   overflow: hidden;
 }
 
+.A1 {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+} 
+
 .container {
   position: relative;
   width: 100%;
