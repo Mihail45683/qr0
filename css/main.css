@@ -52,17 +52,12 @@ button {
 } 
 
 .A1 {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 20px;
-	justify-content: center;
-	align-items: center; 
-	max-width: 90%;
+		
 } 
 
 .container {
   position: relative;
-  width: 100%;
+  width: 95%;
   max-width: 500px;
   padding: 20px;
 }
