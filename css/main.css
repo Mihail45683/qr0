@@ -153,10 +153,3 @@ button {
               inset 0 1px 1px rgba(255, 255, 255, 0.4);
 }
 
-.qrcode-item {
-	background: white;
-	color: black;
-	width: 100%;
- margin: 5px;
- padding: 5px;
-} 
