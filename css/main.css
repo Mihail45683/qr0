@@ -154,7 +154,8 @@ body {
 } 
 
 .qrcode-style {
-	background-color: #ffffff !important;
+	background-color: rgba(255, 255, 255, 0.6) !important;
+	color: rgba(23, 24, 28, 0.4);
 	padding: 15px;
 	border-radius: 8px;
 	display: inline-block;
