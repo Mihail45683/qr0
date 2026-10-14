@@ -15,42 +15,37 @@
 </head>
 <body>
 
-		<div class="container">
-  <!-- Светящиеся сферы на фоне, без которых эффект стекла не будет виден -->
-  <div class="bg-glow blob-1"></div>
-  <div class="bg-glow blob-2"></div>
-
-  <!-- Главная стеклянная карточка -->
-  <div class="glass-card">
-    <h2 class="card-title">Темы оформления</h2>
-    <p class="card-subtitle">Настройте визуальный стиль вашего пространства.</p>
-    
-    <div class="control-group">
-      <span class="label">Цветовой акцент</span>
-      <!-- Пример активной неоновой кнопки -->
-      <button class="neon-button">Coral</button>
-    </div>
-  </div>
+<div class="container">
+	<!-- Светящиеся сферы на фоне, без которых эффект стекла не будет виден -->
+	<div class="bg-glow blob-1"></div> <div class="bg-glow blob-2"></div>
+	<!-- Главная стеклянная карточка -->
+	<div class="glass-card">
+		<h2 class="card-title">Темы оформления</h2>
+		<p class="card-subtitle">Настройте визуальный стиль вашего пространства.</p>
+		<div class="control-group">
+			<span class="label">Цветовой акцент</span>
+			<!-- Пример активной неоновой кнопки -->
+			<button class="neon-button">Coral</button>
+		</div>
+	</div>
 </div>
  
-
-
-
-
-		<div class="glass-card">
-    <button class="neon-button" id="create-default-qrs-btn1" type="button">Показать QR-зон</button>
-    <div id="qrcode1" hidden></div>
-    <button class="neon-button" id="create-default-qrs-btn2" type="button">Показать QR-hranenie</button>
-    <div id="qrcode2" hidden></div>
-		</div>
-		<div class="glass-card" >
-    <h2 class="card-title">Генератор QR</h2>
-    <textarea id="text-input" placeholder="Введите текст или URL (каждый в новой строке)" rows="5" cols="30"></textarea>
-    <br>
-    <button class="neon-button" id="generate-btn">Сгенерировать QR-коды</button>
-    <button class="neon-button" id="save-pdf-btn">Сохранить в PDF</button>
-    <div class="card" id="qrcode-list"></div>
-		</div>
+<div class="container">
+	<div class="glass-card">
+		<button class="neon-button" id="create-default-qrs-btn1" type="button">Показать QR-зон</button>
+		<div id="qrcode1" hidden></div>
+		<button class="neon-button" id="create-default-qrs-btn2" type="button">Показать QR-hranenie</button>
+		<div id="qrcode2" hidden></div>
+	</div>
+	<div class="glass-card" >
+		<h2 class="card-title">Генератор QR</h2>
+		<textarea id="text-input" placeholder="Введите текст или URL (каждый в новой строке)" rows="5" cols="30"></textarea>
+		<br>
+		<button class="neon-button" id="generate-btn">Сгенерировать QR-коды</button>
+		<button class="neon-button" id="save-pdf-btn">Сохранить в PDF</button>
+		<div class="card" id="qrcode-list"></div>
+	</div>
+</div>
 
 
 
