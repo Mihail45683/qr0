@@ -82,7 +82,7 @@
       ];
 
       defaultTexts.forEach(function (qr) {
-        const item = $('<div class="qrcode-item"></div>');
+        const item = $('<div class="qrcode-item" class="qrcode-style" ></div>');
 
         item.qrcode({
           width: 240,
@@ -120,7 +120,7 @@
       ];
 
       defaultTexts.forEach(function (qr) {
-        const item = $('<div class="qrcode-item" style="background-color: #ffffff !important; padding: 15px; border-radius: 8px; display: inline-block; margin-top: 10px;" ></div>');
+        const item = $('<div class="qrcode-item" class="qrcode-style" ></div>');
 
         item.qrcode({
           width: 240,
@@ -155,7 +155,7 @@
                 inputTexts.forEach(function(inputText) {
                     inputText = inputText.trim(); // Удаление лишних пробелов
                     if (inputText) {
-                        var qrcodeItem = $('<div class="qrcode-item"></div>');
+                        var qrcodeItem = $('<div class="qrcode-item" class="qrcode-style" ></div>');
                         qrcodeItem.qrcode(inputText);
                         qrcodeItem.append('<p>' + inputText + '</p>');
 
