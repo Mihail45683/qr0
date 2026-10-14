@@ -47,18 +47,7 @@ body {
   overflow-x: hidden;
 		overflow-y: auto;
 }
-
-button {
-	
-} 
-
-.A1 {
-	display: flex;
- flex-wrap: wrap; /* Позволяет блокам переноситься на новую строку */
- gap: 20px;       /* Расстояние между блоками */ 
-	max-width: 90%;
-		
-} 
+ 
 
 .container {
   position: relative;
