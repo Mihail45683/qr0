@@ -143,16 +143,6 @@ body {
               inset 0 1px 1px rgba(255, 255, 255, 0.4);
 }
 
-
-
-#qrcode1, #qrcode2 {
-    background-color: #ffffff !important; /* Принудительный белый фон */
-    padding: 15px;                        /* Отступ, чтобы края не сливались с фоном */
-    border-radius: 8px;                  /* Скругление углов для красоты */
-    display: inline-block;                /* Схлопывание блока под размер QR */
-    margin-top: 10px;
-}
-
 .qrcode-item {
 	
 } 
