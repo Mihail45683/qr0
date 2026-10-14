@@ -1,3 +1,9 @@
+
+* {-webkit-tap-highlight-color: transparent;} 
+
+
+
+
 .glass-card {
   /* Глубокий темный цвет с прозрачностью 45% */
   background: rgba(26, 27, 31, 0.45); 
