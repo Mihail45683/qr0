@@ -44,7 +44,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #0d0e12; /* Глубокий темный фон */
+  background-color: (255,255,255)/*#0d0e12*/; /* Глубокий темный фон */
   font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
   display: flex;
   justify-content: center;
